@@ -1,4 +1,4 @@
-function [J,MSE] = GAVWAe6Type2GPU(I,G,SigmaS,scale,Niter)
+function [J,MSE] = GAVWAType2GPU(I,G,SigmaS,scale,Niter)
 
 %input: I -- image to be processing I \in [0,1]
 %       G -- guidance image G \in [0,1]
@@ -16,11 +16,6 @@ patchSize = max(3,patchSize); %must be at least 3
 N = patchSize*patchSize;
 hs = ones(patchSize)/N;
 
-%convert to gray scale does not save a lot of time
-% C = size(G,3);
-% if C > 1
-%     G = mean(G,3);
-% end
 
 muG = (imfilter(G, hs,padMethod));%patch mean of I
 muGG = (imfilter(G.*G, hs,padMethod));%patch mean of G
