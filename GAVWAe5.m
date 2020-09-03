@@ -1,10 +1,11 @@
-function [J,w] = GAVWAe5(I,G,SigmaS,scale)
+function [J,w] = GAVWA(I,G,SigmaS,scale)
 
 %input: I -- image to be processing I \in [0,1]
 %       G -- guidance image G \in [0,1]
 %       SigmaS -- bilateral spacial parameter, large ->larger scale object
 %       smoothed out
 %       scale -- bilateral range parameter, scale<1 -> sharper results
+% This is the implementation of the filter proposed in the paper: Edge-aware filters based on adaptive patch variance weighted average. Deng et al. 2020
 
 padMethod = 'symmetric';%used by MATLAB "imguidedfilter"
 patchSize = floor(4*SigmaS) + 1;
