@@ -1,4 +1,4 @@
-function [J,MSE] = GAVWAType2GPU(I,G,SigmaS,scale,Niter)
+function [J,MSE] = GVWAType2GPU(I,G,SigmaS,scale,Niter)
 
 %input: I -- image to be processing I \in [0,1]
 %       G -- guidance image G \in [0,1]
