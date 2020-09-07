@@ -1,4 +1,4 @@
-function [J,w] = GAVWA(I,G,SigmaS,scale)
+function [J,w] = GVWA(I,G,SigmaS,scale)
 
 %input: I -- image to be processing I \in [0,1]
 %       G -- guidance image G \in [0,1]
