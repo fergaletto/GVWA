@@ -11,7 +11,7 @@ iter = 15;
 
 Je2 = I;
 for n=1 : iter
-    [Je2,w] = GAVWAe5(Je2, I,SigmaS,scale);
+    [Je2,w] = GVWA(Je2, I,SigmaS,scale);
 end 
 % 
 % imwrite(Je2, 'results/TS_eric_ours.png')
