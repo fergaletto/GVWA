@@ -12,7 +12,7 @@ This repository contains the official MATLAB implementation of GVWA proposed in 
 
 If you are using this implementation in your research, please consider giving credit by citing our paper:
 
-    @ARTICLE{SSIF_Deng2021,
+    @ARTICLE{GVWA_Galetto2021,
 	    author={F. J. {Galetto} and G. {Deng} and M. {Al-nasrawi} and W. {Waheed}},
 	    journal={IEEE Access}, 
 	    title={Edge-aware filter based on adaptive patch variance weighted average}, 
