@@ -6,7 +6,7 @@ This repository contains the official MATLAB implementation of GVWA proposed in 
 "IEEE Access 2021". 
 
 <p float="left">
-    <img src='./sample.jpg' height="200" hspace="5"/>
+    <img src='./sample.jpg' height="300" hspace="5"/>
 
 </p>
 
